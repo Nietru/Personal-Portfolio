@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Great+Vibes&family=PT+Sans+Narrow&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: 'Comfortaa', cursive;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #04000a;
+  background-color: black;
   color: #fff;
 }
 
@@ -30,7 +32,7 @@ nav {
 }
 
 .logo {
-  width: 240px;
+  width: 180px;
 }
 
 nav ul li {
@@ -41,8 +43,8 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  text-shadow: black 0px 0px 10px;
-  font-size: 24px;
+  text-shadow: black 2px 2px 14px;
+  font-size: 22px;
   font-weight: 500;
   text-decoration: none;
   position: relative;
@@ -57,8 +59,111 @@ nav ul li a::after {
   left: 0;
   bottom: -4px;
 }
+nav ul li a:hover {
+  color: rgb(248, 5, 78);
+}
 /* makes nav item underline appear on hover */
 nav ul li a:hover::after {
   width: 100%;
   transition: 0.5s;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 28px;
+  color: rgb(248, 5, 78)
+  text-shadow: black 0px 0px 10px;
+}
+
+.header-text p {
+    color: rgb(248, 5, 78);
+}
+
+.header-text h1 {
+  font-size: 52px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: rgb(5, 255, 234);
+}
+
+/* -----------------about------------------ */
+#about {
+    padding: 80px 0;
+    color: #bebaba;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    padding-right: 30px;
+}
+.about-col-1 img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    padding-left: 30px;
+}
+
+.sub-title {
+    font-size: 56px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-weight: bolder;
+
+}
+.tab-links:hover {
+    color: rgb(248, 5, 78);
+}
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(5, 255, 234);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span {
+    color:rgb(5, 255, 234);
+    font-size: 14px;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
 }
