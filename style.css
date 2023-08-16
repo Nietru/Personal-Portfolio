@@ -219,7 +219,7 @@ nav ul li a:hover::after {
 .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 60px;
+  grid-gap: 40px;
   margin-top: 50px;
 }
 
@@ -231,8 +231,48 @@ nav ul li a:hover::after {
 
 .work img {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 5px;
   display: block;
-
+  transition: transform 0.5s;
 }
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(248, 5, 78));
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.layer a{
+  margin-top: 20px;
+  color:rgb(5, 255, 234);
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+} 
