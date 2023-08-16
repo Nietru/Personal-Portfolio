@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 
 /* -----------------about------------------ */
 #about {
-    padding: 80px 0;
+    padding: 60px 0;
     color: #bebaba;
 }
 .row {
@@ -170,8 +170,8 @@ nav ul li a:hover::after {
 }
 
 /* ----------------------services------------------  */
-#services {
-    padding: 30px 0;
+#services{
+    padding: 50px 0;
 }
 
 .services-list {
@@ -206,6 +206,12 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #f8054e;
+    background: rgb(248, 5, 78);
     transform: translateY(-10px);
+}
+
+/* ----------------- portfolio ------------------- */
+
+#portfolio {
+    padding: 50px 0;
 }
