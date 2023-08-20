@@ -32,7 +32,7 @@ nav {
 }
 
 .logo {
-  width: 180px;
+  width: 200px;
 }
 
 nav ul li {
@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-shadow: black 2px 2px 14px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   text-decoration: none;
   position: relative;
@@ -61,6 +61,7 @@ nav ul li a::after {
 }
 nav ul li a:hover {
   color: rgb(248, 5, 78);
+  font-size: 26px;
 }
 /* makes nav item underline appear on hover */
 nav ul li a:hover::after {
@@ -91,7 +92,7 @@ nav ul li a:hover::after {
 
 /* -----------------about------------------ */
 #about {
-    padding: 60px 0;
+    padding: 50px 0;
     color: #bebaba;
 }
 .row {
@@ -115,7 +116,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-    font-size: 56px;
+    font-size: 60px;
     color: white;
     font-weight: 600;
     margin-bottom: 20px;
@@ -151,7 +152,7 @@ nav ul li a:hover::after {
     transition: 0.5s;
 }
 .tab-links.active-link::after {
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li {
@@ -213,7 +214,7 @@ nav ul li a:hover::after {
 /* ----------------- portfolio ------------------- */
 
 #portfolio {
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
 .work-list {
@@ -239,8 +240,8 @@ nav ul li a:hover::after {
 
 .layer {
   width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(248, 5, 78));
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(37, 20, 26));
   border-radius: 5px;
   position: absolute;
   left: 0;
@@ -250,10 +251,10 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 0 10px;
   text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
+  font-size: 16px;
+  transition: height 0.4s;
 }
 
 .layer h3 {
@@ -264,7 +265,7 @@ nav ul li a:hover::after {
 
 .layer a{
   margin-top: 20px;
-  color:rgb(5, 255, 234);
+  color: rgb(248, 5, 78);
   text-decoration: none;
   font-size: 28px;
 }
@@ -273,6 +274,104 @@ nav ul li a:hover::after {
   transform: scale(1.1);
 }
 
+.work:hover h3 {
+  font-size: 28px;
+  color: rgb(5, 255, 234);
+}
+
 .work:hover .layer {
   height: 100%;
 } 
+
+/* ---------------------contact---------------- */
+
+#contact{
+  padding: 70px 0;
+}
+
+.contact-left{
+  flex-basis: 35%;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+  font-size: larger;
+}
+
+.contact-left p i{
+  color:rgb(5, 255, 234);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.contact-left p:hover{
+  color: rgb(248, 5, 78);
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: rgb(161, 153, 153);
+  border-radius: 5%;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color: rgb(248, 5, 78, 0.8);
+  transform: translateY(-5px);
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  background: rgb(5, 255, 234);
+}
+
+.btn:hover{
+  font-size: 20px;
+  text-decoration: underline;
+  background: rgb(248, 5, 78);
+}
+
+.contact-right form{
+  width: 100%;
+}
+/* name and email fields */
+ form input, form textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(29, 28, 28);
+}
+/* send button for message */
+form .btn.btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 20%;
+}
