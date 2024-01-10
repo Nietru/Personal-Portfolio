@@ -392,3 +392,30 @@ form .btn.btn2{
   cursor: pointer;
   width: 20%;
 }
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* -----------------media queries------------------ */
+
+/* hide hamburger menu and x icons on larger screens */
+nav .fa-solid{
+  display: none;
+}
+/* small screens */
+@media only screen and (max-width: 600px){
+#header{
+  background-image: none;
+}
+.header-text{
+  font-size: 16px;
+}
+.header-text h1{
+  font-size: 26px;
+}
+}
